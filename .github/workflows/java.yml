@@ -27,7 +27,7 @@ jobs:
         git config --global user.email "asme12@naver.com"
         git config --global user.name "limdongsun0814"
         git commit -am "github-action"
-        git push
+        git push origin main
         
 
       
