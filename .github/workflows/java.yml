@@ -28,6 +28,7 @@ jobs:
       run: |
         git fetch
         git checkout main
+        rm -f com.file.utils.jar
         git add com.file.utils.jar
         git commit -m "Add com.file.utils.jar"
         git push origin main     
