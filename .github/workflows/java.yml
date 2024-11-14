@@ -22,16 +22,23 @@ jobs:
       run: jar cvf com.file.utils.jar -C Utils .
     - name: git push
       run: |
-        ls
-        git fetch
-        git branch
-        git add com.file.utils.jar
         git config --global user.email "asme12@naver.com"
         git config --global user.name "limdongsun0814"
-        git commit -am "github-action"
         git checkout main
-        # git cherry-pick "cherry pick"
+        git add com.file.utils.jar
+        git commit -m "Add com.file.utils.jar"
         git push origin main
+        
+        # ls
+        # git fetch
+        # git branch
+        # git add com.file.utils.jar
+        # git config --global user.email "asme12@naver.com"
+        # git config --global user.name "limdongsun0814"
+        # git commit -am "github-action"
+        # git checkout main
+        # # git cherry-pick "cherry pick"
+        # git push origin main
         
 
       
