@@ -19,7 +19,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: make jar
-      run: jar cvf com.file.utils.jar -C File-Utils/Utils .
+      run: jar cvf com.file.utils.jar -C Utils .
     - name: git push
       run: |
         git checkout main
