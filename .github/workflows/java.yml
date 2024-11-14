@@ -26,7 +26,7 @@ jobs:
         git config --global user.name "limdongsun0814"
     - name: git push
       run: |
-        git fetch origin
+        git fetch
         git checkout main
         git add com.file.utils.jar
         git commit -m "Add com.file.utils.jar"
