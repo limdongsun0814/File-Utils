@@ -16,7 +16,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - run: |
-        jar cvf .jar -C Utils .
+        jar cvf com.file.utils.jar -C Utils .
         ls
 
   #   # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
