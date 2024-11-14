@@ -8,11 +8,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:    
+        ref: source
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        ref: source
     - run: |
         ls
 
