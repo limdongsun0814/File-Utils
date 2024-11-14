@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -66,16 +66,9 @@ public class Files {
 		}
 		return FileList;
 	}
-//	남은거 arrList => hashmap / 
-	public static void main(String[] args) throws FileNotFoundException {
-		Files aa = new Files("C:\\Users\\asme1\\Desktop\\테스트");
-		aa.getNode(0).getChild(0);
-		aa.getNode(0).getChild(0).remove();
-		
-		System.out.println(aa.toString());
-	}
+
 	
-	private class Node{
+	public class Node{
 		private String node;
 		private List<Node> child;
 		private Node parent;
