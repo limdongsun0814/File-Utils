@@ -19,22 +19,24 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: make jar
-      run: |
-        cd ..
-        ls
-        jar cvf com.file.utils.jar -C File-Utils/Utils .
+      run: jar cvf com.file.utils.jar -C File-Utils/Utils .
     - name: git push
-      run: |        
-        ls
-        git fetch
-        git branch
-        git add com.file.utils.jar
-        git config --global user.email "asme12@naver.com"
-        git config --global user.name "limdongsun0814"
-        git commit -am "github-action"
+      run: |
         git checkout main
-        git cherry-pick "github-action"
+        git fetch origin
+        git add com.file.utils.jar
+        git commit -m "Add com.file.utils.jar"
         git push origin main
+        # ls
+        # git fetch
+        # git branch
+        # git add com.file.utils.jar
+        # git config --global user.email "asme12@naver.com"
+        # git config --global user.name "limdongsun0814"
+        # git commit -am "github-action"
+        # git checkout main
+        # git cherry-pick "github-action"
+        # git push origin main
         
 
       
