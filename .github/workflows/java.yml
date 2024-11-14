@@ -30,7 +30,7 @@ jobs:
         git config --global user.name "limdongsun0814"
         git commit -am "github-action"
         git checkout main
-        git cherry-pick "cherry pick"
+        # git cherry-pick "cherry pick"
         git push origin main
         
 
