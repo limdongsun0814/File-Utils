@@ -27,9 +27,12 @@ jobs:
     - name: git push
       run: |
         git fetch
+        ls
         mv com.file.utils.jar /tmp/
+        ls
         git checkout main
         mv /tmp/com.file.utils.jar .
+        ls
         git add com.file.utils.jar
         git commit -m "Add com.file.utils.jar"
         git push origin main     
