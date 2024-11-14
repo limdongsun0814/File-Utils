@@ -22,8 +22,8 @@ jobs:
       run: jar cvf com.file.utils.jar -C Utils .
     - name: git push
       run: |
-        git checkout main
         git fetch origin
+        git checkout main
         git add com.file.utils.jar
         git commit -m "Add com.file.utils.jar"
         git push origin main
