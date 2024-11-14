@@ -31,6 +31,7 @@ jobs:
         mv com.file.utils.jar /tmp/
         ls
         git checkout main
+        rm com.file.utils.jar
         mv /tmp/com.file.utils.jar .
         ls
         git add com.file.utils.jar
